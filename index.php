@@ -96,16 +96,16 @@
             ?>
         </div>
         <?php
-            $i=1; 
+            $id=1; 
             foreach($heroes as $_heroes):                
         ?>
-        <a class="vignette <?=$_heroes?>" href="#">
+        <a class="vignette <?=$_heroes_class = preg_replace('/\s+/', '', $_heroes)?>" href="#">
             <div><?=$_heroes?></div>
             <!-- <img class="img_vignette" src= "<?= str_replace('http://', 'https://',$heroes_0->results[0]->image->url )?>" alt=""> -->
-            <div><?=$i?></div>
+            <div><?=$id?></div>
         </a>
         <?php
-            $i++; 
+            $id++; 
             endforeach
         ?>
 

@@ -15,9 +15,9 @@ if ($q !== "") {
         {
         if (stristr($q, substr($hero, 0, $len))) {
             if ($hint === "") {
-                $hint = "<p class='result_search'>$hero</p>";
+                $hint = "$hero<br>";
             } else {
-                $hint .= "<p class='result_search'>$hero</p>";
+                $hint .= "$hero<br>";
             }
         }
     }
