@@ -1,0 +1,43 @@
+form.search{
+    position:absolute;
+}
+
+.searchbar
+{
+    position:relative
+}
+
+.livesearch{
+   position : absolute;
+   text-align: left;
+   background: #ffffff;
+   
+}
+.result_search{
+   z-index: 10;
+   margin:0;
+   padding:0;
+   width: 100%;
+}
+.result_search:hover{
+   background-color: aqua;
+}
+
+
+
+.heroes
+{
+    display:inline-block;
+}
+
+a.vignette
+{
+    display: inline-block;
+    width: 200px;
+    height: 130px;;
+}
+img.img_vignette
+{
+    height: 100px;
+    display: block;
+}
