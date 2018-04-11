@@ -24,7 +24,7 @@ for(let i=0; i<$stickers.length;i++)
                 $name_0 = stickers[i].dataset.name
                 $id_0 = stickers[i].dataset.id
                 selected_element++
-                $unknown_name_0.innerHTML='Name1 selected : '+$name_0
+                $unknown_name_0.innerHTML='Name1 : '+$name_0
                 console.log($id_0)
             }
 
@@ -33,7 +33,7 @@ for(let i=0; i<$stickers.length;i++)
                 $name_1 = stickers[i].dataset.name
                 $id_1 = stickers[i].dataset.id
                 selected_element++
-                $unknown_name_1.innerHTML='Name2 selected : '+$name_1
+                $unknown_name_1.innerHTML='Name2 : '+$name_1
                 console.log($id_1)
             }
 
