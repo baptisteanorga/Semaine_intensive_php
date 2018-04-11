@@ -41,7 +41,11 @@
         <input class='input_result result_bar_1' value="" type="text" name="name_1">
         <div class="result_name_1"></div>
         <button class="fight" type="submit">Fight</button>
-</form>
+    </form>
+
+    <div class="unknown_name_0">Name :</div>
+    <div class="unknown_name_1">Name :</div>
+
 
     <!-- <form class='search'>
         <input class='searchBar' type="text" size="30" onkeyup="showResult(this.value)">
