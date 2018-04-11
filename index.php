@@ -28,6 +28,10 @@
     <title>SuperHeros</title>
 </head>
 <body>
+
+    <div class="unknown_name_0">Name :</div>
+    <div class="unknown_name_1">Name :</div>
+
     
     <!-- Form -->
     <form action="#" method="get">
@@ -43,8 +47,6 @@
         <button class="fight" type="submit">Fight</button>
     </form>
 
-    <div class="unknown_name_0">Name :</div>
-    <div class="unknown_name_1">Name :</div>
 
 
     <!-- <form class='search'>
@@ -57,29 +59,6 @@
                 echo 'Je suis vide';
             }
             else if (!empty($_GET['name_0']))
-            {
-                ?>
-
-        <div class="heroes">
-            <div><?=$name_0?></div>
-            <div>Name: <?= $heroes_0->name; ?></div>
-            <div>Full-name: <?= $heroes_0->biography->{'full-name'} ?></div>                
-            <div>Intelligence: <?= $heroes_0->powerstats->intelligence?></div>
-            <img src="<?= str_replace('http://', 'https://', $heroes_0->image->url)?>" width="240px" height="320px" alt="">
-
-        </div>
-
-        <div class="heroes">
-            <div><?=$name_1?></div>
-            <div>Name: <?= $heroes_1->name; ?></div>
-            <div>Full-name: <?= $heroes_1->biography->{'full-name'} ?></div>
-            <div>Intelligence: <?= $heroes_1->powerstats->intelligence?></div>
-            <img src="<?= str_replace('http://', 'https://', $heroes_1->image->url)?>" width="240px" height="320px" alt="">
-                
-
-        <?php
-            
-            if (!empty($_GET['name_0']))
             {
         
         ?>
@@ -137,10 +116,6 @@
                 echo $message_result;
             ?>
             </div>
-
-        <?php
-            }
-        ?>
 
         <?php
             }
