@@ -50,7 +50,7 @@
         <?php
             if(empty($_GET['name_0']))
             {
-                echo 'yolo';
+                echo 'Je suis vide';
             }
             else if (!empty($_GET['name_0']))
             {

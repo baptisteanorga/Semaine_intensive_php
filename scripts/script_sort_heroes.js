@@ -28,13 +28,6 @@ const showResult= str => {
             }
         }
 
-<<<<<<< HEAD
-=======
-
-        //Handle research 
-        document.querySelector('.livesearch').innerHTML=this.responseText;
-        document.querySelector('.livesearch').style.border="1px solid #A5ACB2";
->>>>>>> 8e5f0338a0ea6dfed064c9a0768af25bf05fe3de
         }
     }
     xmlhttp.open("GET","includes/livesearch.php?q="+str,true);

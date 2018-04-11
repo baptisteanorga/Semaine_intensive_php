@@ -27,7 +27,6 @@ input.input_result
 {
 display:none
 }
-<<<<<<< HEAD
 
 .test
 {
@@ -40,20 +39,14 @@ div[class^="unknown_name_"]
     display: inline-block;
     color:red;
 }
-=======
->>>>>>> 8e5f0338a0ea6dfed064c9a0768af25bf05fe3de
 
 button.fight
 {
     display:none;
     position: absolute;
-<<<<<<< HEAD
     right:20px;
     top:100px;
     z-index:2;
-=======
-    right:0;
->>>>>>> 8e5f0338a0ea6dfed064c9a0768af25bf05fe3de
 }
 
 .heroes
@@ -64,16 +57,10 @@ button.fight
 div.sticker
 {
     display: none;
-<<<<<<< HEAD
     width: 180px;
     height: 130px;
     cursor:pointer;
     background: green;
-=======
-    width: 200px;
-    height: 130px;
-    cursor:pointer;
->>>>>>> 8e5f0338a0ea6dfed064c9a0768af25bf05fe3de
 }
 img.img_sticker
 {
