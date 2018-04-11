@@ -47,11 +47,30 @@
         <input class='searchBar' type="text" size="30" onkeyup="showResult(this.value)">
         <div class="livesearch"></div>
     </form> -->
-              <div class="test">
-                <div class="unknown_name_0">Name:</div>
-                <div class="unknown_name_1">Name:</div>
+        <?php
+            if(empty($_GET['name_0']))
+            {
+                echo 'yolo';
+            }
+            else if (!empty($_GET['name_0']))
+            {
+                ?>
 
-              </div>  
+        <div class="heroes">
+            <div><?=$name_0?></div>
+            <div>Name: <?= $heroes_0->name; ?></div>
+            <div>Full-name: <?= $heroes_0->biography->{'full-name'} ?></div>                
+            <div>Intelligence: <?= $heroes_0->powerstats->intelligence?></div>
+            <img src="<?= str_replace('http://', 'https://', $heroes_0->image->url)?>" width="240px" height="320px" alt="">
+
+        </div>
+
+        <div class="heroes">
+            <div><?=$name_1?></div>
+            <div>Name: <?= $heroes_1->name; ?></div>
+            <div>Full-name: <?= $heroes_1->biography->{'full-name'} ?></div>
+            <div>Intelligence: <?= $heroes_1->powerstats->intelligence?></div>
+            <img src="<?= str_replace('http://', 'https://', $heroes_1->image->url)?>" width="240px" height="320px" alt="">
                 
 
         <?php
@@ -98,8 +117,8 @@
                 {
                     $clever= $heroes_0->name;
                     $message_result= $clever.' est plus intelligent que '.$heroes_1->name ;
-                }   
 
+                }   
                 else if (($heroes_0->powerstats->intelligence)<($heroes_1->powerstats->intelligence))
                 {
                     $clever= $heroes_1->name;
@@ -114,6 +133,10 @@
                 echo $message_result;
             ?>
             </div>
+
+        <?php
+            }
+        ?>
 
         <?php
             }
