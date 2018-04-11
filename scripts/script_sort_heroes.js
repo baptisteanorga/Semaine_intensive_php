@@ -1,11 +1,11 @@
-const vignettes = Array.from(document.querySelectorAll('.vignette'))
+const stickers = Array.from(document.querySelectorAll('.sticker'))
 
 
 const showResult= str => {
 
-    for (vignette of vignettes){
+    for (sticker of stickers){
 
-        vignette.style.display = "none"
+        sticker.style.display = "none"
         
     }
 
@@ -17,17 +17,16 @@ const showResult= str => {
         xmlhttp=new XMLHttpRequest();
     xmlhttp.onreadystatechange=function() {
         if (this.readyState==4 && this.status==200){
-        //handle Vignette 
+        //handle sticker 
         const remove_space = this.responseText.replace(/\s+/g, '') 
         const heroes_list = remove_space.split('<br>')
         for(heroe of heroes_list){
-            for (vignette of vignettes){
-                if (vignette.classList.contains(heroe)){
-                    vignette.style.display = "inline-block"
+            for (sticker of stickers){
+                if (sticker.classList.contains(heroe)){
+                    sticker.style.display = "inline-block"
                 }
             }
         }
-        console.log(heroes_list)
 
 
         //Handle research 
@@ -39,3 +38,22 @@ const showResult= str => {
     xmlhttp.send();
     }
 
+
+
+    function refuserToucheEntree(event)
+    {
+        // Compatibilité IE / Firefox
+        if(!event && window.event) {
+            event = window.event;
+        }
+        // IE
+        if(event.keyCode == 13) {
+            event.returnValue = false;
+            event.cancelBubble = true;
+        }
+        // DOM
+        if(event.which == 13) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    }

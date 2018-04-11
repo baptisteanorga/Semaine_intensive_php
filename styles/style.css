@@ -23,20 +23,31 @@ form.search{
    background-color: aqua;
 }
 
+input.input_result
+{
+display:none
+}
 
+button.fight
+{
+    display:none;
+    position: absolute;
+    right:0;
+}
 
 .heroes
 {
     display:inline-block;
 }
 
-a.vignette
+div.sticker
 {
     display: none;
     width: 200px;
-    height: 130px;;
+    height: 130px;
+    cursor:pointer;
 }
-img.img_vignette
+img.img_sticker
 {
     height: 100px;
     display: block;
