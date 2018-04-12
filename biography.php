@@ -40,6 +40,18 @@
             <span><?= $hero_info->biography->{'first-appearance'} ?></span><br>
             <span><?= $hero_info->biography->publisher ?></span><br>
             <span><?= $hero_info->biography->alignment ?></span><br>
+
+
+            <!-- hero stat -->
+            <div class='global_stats' 
+                data-intelligence= "<?= $hero_info->powerstats->intelligence == null ? rand(0,100): $hero_info->powerstats->intelligence ?>"
+                data-strength ="<?=$hero_info->powerstats->strength == null ? rand(0,100): $hero_info->powerstats->strength ?>"
+                data-speed ="<?=$hero_info->powerstats->speed == null ? rand(0,100): $hero_info->powerstats->speed ?>"
+                data-durability ="<?= $hero_info->powerstats->durability == null ? rand(0,100): $hero_info->powerstats->durability ?>"
+                data-power ="<?= $hero_info->powerstats->power == null ? rand(0,100): $hero_info->powerstats->power  ?>"
+                data-combat ="<?= $hero_info->powerstats->combat == null ? rand(0,100): $hero_info->powerstats->combat ?>"
+            >
+            </div>
             
             <!--- hero's life -->
             <p><?= $hero_info->connections->{'group-affiliation'} ?></p><br>
