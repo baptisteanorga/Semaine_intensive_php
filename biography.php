@@ -1,14 +1,9 @@
 <?php 
             
              $hero_id = (int)$_GET['name'];
-
             if( !isset($hero_id) || empty($hero_id) || ($hero_id>731) || ($hero_id<1) ){
                 $hero_id = 13;
             }
-
-
-
-
             $url = 'http://superheroapi.com/api/1584552111592365/' . $hero_id;
             $path = 'cache/'.md5($url);
             if(file_exists($path) && time() - filemtime($path) < 10)
@@ -22,8 +17,8 @@
                 $hero_info = json_decode(file_get_contents($url));
                 file_put_contents($path, json_encode($hero_info));
             }
-
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
