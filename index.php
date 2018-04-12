@@ -10,13 +10,11 @@
     $name_1 = !empty($_GET['name_1']) ? $_GET['name_1'] : '';
 
 
-
     $heroes_0 = file_get_contents('http://superheroapi.com/api/2024501571102531/'.$name_0.'');
     $heroes_0 = json_decode($heroes_0);
 
 
     $heroes_1 = file_get_contents('http://superheroapi.com/api/2024501571102531/'.$name_1.'');
-
     $heroes_1 = json_decode($heroes_1);
 
 
@@ -34,12 +32,6 @@
     $durability_1;
     $power_1;
     $combat_1;
-
-
-
-    //TEST
-
-    $nom='Paul';
 
 ?>
 <!DOCTYPE html>
@@ -297,9 +289,7 @@
                 data-power_1 ="<?=$power_1?>"
                 data-combat_0 ="<?=$combat_0?>"
                 data-combat_1 ="<?=$combat_1?>"
-               
-        
-        >
+            >
         </div>
             
 
