@@ -52,15 +52,15 @@ button.fight
 .heroes
 {
     display:inline-block;
+    width: 400px;
 }
 
-div.sticker
+div.bio
 {
     display: none;
     width: 180px;
     height: 130px;
-    cursor:pointer;
-    background: green;
+    background: rgb(81, 155, 81);
 }
 img.img_sticker
 {

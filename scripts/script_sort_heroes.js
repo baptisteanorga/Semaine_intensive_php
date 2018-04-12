@@ -1,11 +1,11 @@
-const stickers = Array.from(document.querySelectorAll('.sticker'))
+const bios = Array.from(document.querySelectorAll('.bio'))
 
 
 const showResult= str => {
 
-    for (sticker of stickers){
+    for (bio of bios){
 
-        sticker.style.display = "none"
+        bio.style.display = "none"
         
     }
 
@@ -17,13 +17,13 @@ const showResult= str => {
         xmlhttp=new XMLHttpRequest();
     xmlhttp.onreadystatechange=function() {
         if (this.readyState==4 && this.status==200){
-        //handle sticker 
+        //handle bio 
         const remove_space = this.responseText.replace(/\s+/g, '') 
         const heroes_list = remove_space.split('<br>')
         for(heroe of heroes_list){
-            for (sticker of stickers){
-                if (sticker.classList.contains(heroe)){
-                    sticker.style.display = "inline-block"
+            for (bio of bios){
+                if (bio.classList.contains(heroe)){
+                    bio.style.display = "inline-block"
                 }
             }
         }
