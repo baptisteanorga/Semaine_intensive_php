@@ -17,7 +17,8 @@
                 $hero_info = json_decode(file_get_contents($url));
                 file_put_contents($path, json_encode($hero_info));
             }
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
