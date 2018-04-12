@@ -226,7 +226,7 @@
             </div>
 
             <div class="canvas">
-                <canvas id="myCanvas" class="secondCanvas" width="500" height="500" style="transform: rotate(-90deg);"></canvas>
+                <canvas id="myCanvas" class="myCanvas" width="500" height="500" style="transform: rotate(-90deg);"></canvas>
             </div> 
 
             
