@@ -35,6 +35,12 @@
     $power_1;
     $combat_1;
 
+
+
+    //TEST
+
+    $nom='Paul';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -236,7 +242,11 @@
                     
             </div>
 
-            <div>
+            <div class="canvas">
+                <canvas id="myCanvas" class="secondCanvas" width="500" height="500" style="transform: rotate(-90deg);"></canvas>
+            </div> 
+
+            
             <?php 
                 $total_0=   $intelligence_0+
                             $strength_0+
@@ -274,6 +284,24 @@
 
             ?>
             </div>
+            <div    class='global_stats' 
+                data-intelligence_0= "<?=$intelligence_0?>"
+                data-intelligence_1= "<?=$intelligence_1?>"
+                data-strength_0 ="<?=$strength_0?>"
+                data-strength_1 ="<?=$strength_1?>"
+                data-speed_0 ="<?=$speed_0?>"
+                data-speed_1 ="<?=$speed_1?>"
+                data-durability_0 ="<?=$durability_0?>"
+                data-durability_1 ="<?=$durability_1?>"
+                data-power_0 ="<?=$power_0?>"
+                data-power_1 ="<?=$power_1?>"
+                data-combat_0 ="<?=$combat_0?>"
+                data-combat_1 ="<?=$combat_1?>"
+               
+        
+        >
+        </div>
+            
 
         <?php
             }
@@ -298,27 +326,22 @@
             endforeach
         ?>
         
-        <div    class='global_stats' 
-                data-intelligence_0= "<?=$intelligence_0?>"
-                data-intelligence_1= "<?=$intelligence_1?>"
-                data-strength_0 ="<?=$strength_0?>"
-                data-strength_1 ="<?=$strength_1?>"
-                data-speed_0 ="<?=$speed_0?>"
-                data-speed_1 ="<?=$speed_1?>"
-                data-durability_0 ="<?=$durability_0?>"
-                data-durability_1 ="<?=$durability_1?>"
-                data-power_0 ="<?=$power_0?>"
-                data-power_1 ="<?=$power_1?>"
-                data-combat_0 ="<?=$power_0?>"
-                data-combat_1 ="<?=$power_1?>"
-               
         
-        >
-        </div>
 
 
 <script src="scripts/script_sort_heroes.js"></script>
 <script src="scripts/script_form.js"></script>
+
+<!-- include js canvas -->
+
+<?php if (!empty($_GET['name_0']))
+ {
+?>
+<script src="scripts/script_canvas.js"></script>
+<?php
+ }
+?>
+
 
 </body>
 </html>
