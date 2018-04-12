@@ -297,7 +297,24 @@
             $j++; 
             endforeach
         ?>
-
+        
+        <div    class='global_stats' 
+                data-intelligence_0= "<?=$intelligence_0?>"
+                data-intelligence_1= "<?=$intelligence_1?>"
+                data-strength_0 ="<?=$strength_0?>"
+                data-strength_1 ="<?=$strength_1?>"
+                data-speed_0 ="<?=$speed_0?>"
+                data-speed_1 ="<?=$speed_1?>"
+                data-durability_0 ="<?=$durability_0?>"
+                data-durability_1 ="<?=$durability_1?>"
+                data-power_0 ="<?=$power_0?>"
+                data-power_1 ="<?=$power_1?>"
+                data-combat_0 ="<?=$power_0?>"
+                data-combat_1 ="<?=$power_1?>"
+               
+        
+        >
+        </div>
 
 
 <script src="scripts/script_sort_heroes.js"></script>
