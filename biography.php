@@ -10,7 +10,7 @@
 
 
             $url = 'http://superheroapi.com/api/1584552111592365/' . $hero_id;
-            $path = '../cache/'.md5($url);
+            $path = 'cache/'.md5($url);
             if(file_exists($path) && time() - filemtime($path) < 10)
             {
                 
