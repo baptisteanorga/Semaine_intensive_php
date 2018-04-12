@@ -67,3 +67,12 @@ img.img_sticker
     height: 100px;
     display: block;
 }
+
+
+/* CANVAS */
+
+.canvas
+{
+    width: 500px;
+    transform:rotateY(180deg);
+}

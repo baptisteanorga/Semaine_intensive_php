@@ -10,13 +10,11 @@
     $name_1 = !empty($_GET['name_1']) ? $_GET['name_1'] : '';
 
 
-
     $heroes_0 = file_get_contents('http://superheroapi.com/api/2024501571102531/'.$name_0.'');
     $heroes_0 = json_decode($heroes_0);
 
 
     $heroes_1 = file_get_contents('http://superheroapi.com/api/2024501571102531/'.$name_1.'');
-
     $heroes_1 = json_decode($heroes_1);
 
 
@@ -236,7 +234,11 @@
                     
             </div>
 
-            <div>
+            <div class="canvas">
+                <canvas id="myCanvas" class="secondCanvas" width="500" height="500" style="transform: rotate(-90deg);"></canvas>
+            </div> 
+
+            
             <?php 
                 $total_0=   $intelligence_0+
                             $strength_0+
@@ -274,11 +276,26 @@
 
             ?>
             </div>
+            <div    class='global_stats' 
+                data-intelligence_0= "<?=$intelligence_0?>"
+                data-intelligence_1= "<?=$intelligence_1?>"
+                data-strength_0 ="<?=$strength_0?>"
+                data-strength_1 ="<?=$strength_1?>"
+                data-speed_0 ="<?=$speed_0?>"
+                data-speed_1 ="<?=$speed_1?>"
+                data-durability_0 ="<?=$durability_0?>"
+                data-durability_1 ="<?=$durability_1?>"
+                data-power_0 ="<?=$power_0?>"
+                data-power_1 ="<?=$power_1?>"
+                data-combat_0 ="<?=$combat_0?>"
+                data-combat_1 ="<?=$combat_1?>"
+            >
+        </div>
+            
 
         <?php
             }
         ?>
-
         <?php
             $id=1;
             $j=0; 
@@ -288,7 +305,9 @@
             <div><?=$_heroes?></div>
             <img class="img_sticker" src= "<?= str_replace('http://', 'https://',$url[$j] )?>" alt="">
             <div><?=$id?></div>
-            <a class='sticker' href="#" data-name ="<?=$_heroes?>" data-id="<?=$id?>" data-name ="<?=$_heroes?>">add <?=$_heroes?> </a>
+            <a class='sticker' href="#" data-name ="<?=$_heroes?>" data-id="<?=$id?>" data-name ="<?=$_heroes?>">Compare <?=$_heroes?> </a>
+            </br>
+            <a href="biography.php/?name= <?=$id ?>">Read more</a>
         </div>
         
         <?php
@@ -296,10 +315,23 @@
             $j++; 
             endforeach
         ?>
+        
+        
 
 
 <script src="scripts/script_sort_heroes.js"></script>
 <script src="scripts/script_form.js"></script>
+
+<!-- include js canvas -->
+
+<?php if (!empty($_GET['name_0']))
+ {
+?>
+<script src="scripts/script_canvas.js"></script>
+<?php
+ }
+?>
+
 
 </body>
 </html>

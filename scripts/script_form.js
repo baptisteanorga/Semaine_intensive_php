@@ -39,10 +39,9 @@ for(let i=0; i<$stickers.length;i++)
                 selected_element++
                 $unknown_name_1.innerHTML='Name2 : '+$name_1
             }
-
+            
             add_name()
-        }
-        
+        }      
        
     }); 
 
