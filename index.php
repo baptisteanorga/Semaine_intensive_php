@@ -278,7 +278,6 @@
         <?php
             }
         ?>
-
         <?php
             $id=1;
             $j=0; 
@@ -288,7 +287,9 @@
             <div><?=$_heroes?></div>
             <img class="img_sticker" src= "<?= str_replace('http://', 'https://',$url[$j] )?>" alt="">
             <div><?=$id?></div>
-            <a class='sticker' href="#" data-name ="<?=$_heroes?>" data-id="<?=$id?>" data-name ="<?=$_heroes?>">add <?=$_heroes?> </a>
+            <a class='sticker' href="#" data-name ="<?=$_heroes?>" data-id="<?=$id?>" data-name ="<?=$_heroes?>">Compare <?=$_heroes?> </a>
+            </br>
+            <a href="biography.php/?name= <?=$id ?>">Read more</a>
         </div>
         
         <?php
@@ -296,6 +297,7 @@
             $j++; 
             endforeach
         ?>
+
 
 
 <script src="scripts/script_sort_heroes.js"></script>
