@@ -10,8 +10,8 @@ const showResult= str => {
     }
 
     if (str.length==0) { 
-        document.querySelector('.livesearch').innerHTML="";
-        document.querySelector('.livesearch').style.border="0px";
+        document.querySelector('.live_search').innerHTML="";
+        document.querySelector('.live_search').style.border="0px";
         return;
     }
         xmlhttp=new XMLHttpRequest();

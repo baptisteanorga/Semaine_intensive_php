@@ -7,7 +7,8 @@ $unknown_name_1=document.querySelector('.unknown_name_1')
 
 $result_bar_0= document.querySelector('.result_bar_0')
 $result_bar_1= document.querySelector('.result_bar_1')
-$input_fight=document.querySelector('.fight')
+$compare=document.querySelector('.compare_button')
+
 
 $stickers=Array.from(document.querySelectorAll('.sticker'))
 
@@ -29,7 +30,7 @@ for(let i=0; i<$stickers.length;i++)
                 $name_0 = $stickers[i].dataset.name
                 $id_0 = $stickers[i].dataset.id
                 selected_element++
-                $unknown_name_0.innerHTML='Name1 : '+$name_0
+                $unknown_name_0.innerHTML='Name : '+$name_0
             }
 
             else if((selected_element==1)&&($name_1==null))
@@ -37,7 +38,7 @@ for(let i=0; i<$stickers.length;i++)
                 $name_1 = $stickers[i].dataset.name
                 $id_1 = $stickers[i].dataset.id
                 selected_element++
-                $unknown_name_1.innerHTML='Name2 : '+$name_1
+                $unknown_name_1.innerHTML='Name : '+$name_1
             }
             
             add_name()
@@ -49,19 +50,19 @@ for(let i=0; i<$stickers.length;i++)
 }
 
 //Remove selected_element to 0
-$input_fight.addEventListener('click',()=>
+$compare.addEventListener('click',()=>
 {
     selected_element=0
 
 })
 
-const add_name=()=>
+const add_name = ()=>
 {
     if(selected_element==2)
     {
         $result_bar_0.value=$id_0
         $result_bar_1.value=$id_1
-        $input_fight.style.display="inline-block"
+        $compare.style.display="inline-block"
         
     }
 }

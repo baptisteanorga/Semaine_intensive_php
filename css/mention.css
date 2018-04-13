@@ -1,0 +1,253 @@
+@font-face 
+{
+    font-family: 'SF Comic Script';
+    src: url('../ressources/font/SFComicScript.woff2') format('woff2'),
+    url('../ressources/font/SFComicScript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+    background: #141414;
+}
+/* HOME BEGIN */
+/* header begin */
+.top-bar
+{
+    background: #8C2E2E;
+}
+.circle
+{
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+}
+.logo_img
+{
+    width: 2em;
+    transform: translateX(50%);
+    padding-top: 0.5em;
+}
+.top-bar ul
+{
+    background: none;
+}
+
+
+table{
+    width: 12em;
+}
+.right{
+    margin-right: 2%;
+    font-family: SF Comic Script;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 28px;
+}
+.right li{
+    display: inline;
+}
+
+.right a{
+    color: #FFFFFF;
+}
+
+.home{
+    padding-right: 2em;
+}
+
+ul
+{
+    list-style-type: none;
+}
+.top-bar-table a
+{
+    margin-right: 2em;
+    color: #F2F2F2;
+}
+@media screen and (min-width: 300px) and (max-width: 700px)
+{
+    .top-bar-table
+    {
+        text-align: center;
+    }
+    .top-bar-table a
+    {
+       font-size: 0.7em;
+    }
+}
+/* header end */
+
+/* footer begin */
+.footer
+{
+	background-color: #8C2E2E;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right
+{
+	display: inline-block;
+	vertical-align: top;
+}
+/* Footer left */
+.footer .footer-left
+{
+	width: 40%;
+}
+/* The company logo */
+.footer .logo
+{
+	color:  #ffffff;
+    height: 10%;
+    width: 15%;
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 33%;
+    transform: translateX(-66%);
+}
+.footer .footer-company-name
+{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+    margin: 0;
+    padding-top: 5%;
+}
+/* Footer Center */
+.footer .footer-center
+{
+	width: 35%;
+}
+.footer .footer-center i
+{
+	margin: 5px 5px;
+}
+.footer .footer-center p
+{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+.footer .footer-center p span
+{
+	display:block;
+	font-weight: normal;
+	font-size:18px;
+	line-height:2;
+}
+.footer .footer-icons
+{
+	margin-top: 25px;
+}
+.footer .footer-icons a
+{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 15px;
+	margin-bottom: 5px;
+}
+/* Footer Right */
+.footer .footer-right
+{
+	width: 20%;
+}
+.footer-right ul
+{
+    list-style-type: none;
+	line-height: 20px;
+	font-size: 20px;
+	font-weight: lighter;
+    margin: 0;
+    margin-top: 15%;
+}
+.footer-right ul li
+{
+	display: block;
+	color:  #ffffff;
+	margin-bottom: 40px;
+}
+.footer-right ul li a
+{
+	color:  #ffffff;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) 
+{
+
+    .footer
+    {
+		font: bold 14px sans-serif;
+	}
+
+	.footer .footer-left,
+	.footer .footer-center,
+    .footer .footer-right
+    {
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+    .footer .footer-center i
+    {
+		margin-left: 0;
+    }
+    
+    .footer .logo
+    {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* footer end */
+
+/* mention légales begin */
+.mentions_legales
+{
+    color: white;
+    text-align: center;
+}
+.mentions
+{
+    color: white;
+    text-align: center;
+    font-family: SF Comic Script;
+}
+.titles
+{
+    font-family: SF Comic Script;
+    
+}
+/* mention légales end */
+/* why us begin */
+.why_us
+{
+    text-align: center;
+    font-size: 170px;
+    color: white;
+    font-family: SF Comic Script;
+}
+/* why us end */
